@@ -28,11 +28,13 @@ li a {
 }
 
 main {
-    padding: 0 200px;
+    padding: 140px 200px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .left {
-    display: flex;
+    display: flex;  
     gap: 40px;
     flex-direction: column;
 }
@@ -77,4 +79,29 @@ main {
     width: 243px;
     height: 243px;
     border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+@media screen and (width: 425) {
+    main{
+        flex-direction: column-reverse;
+        padding: 24px;   
+
+    }
+
+    .left, .right{
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .left h1{
+        font-family: Heebo, sans-serif;
+        font-size: 44px;
+
+    }
+
 }
