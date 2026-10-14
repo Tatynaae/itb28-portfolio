@@ -28,7 +28,9 @@ li a {
 }
 
 main {
-    padding: 0 200px;
+    display: flex;
+    justify-content: space-between;
+    padding: 140px 200px;
 }
 
 .left {
@@ -77,4 +79,8 @@ main {
     width: 243px;
     height: 243px;
     border-radius: 50%;
+    object-fit: cover;
+    box-shadow: -18px 24px 40px -8px rgba(0,0,0,0.75);
+-webkit-box-shadow: -18px 24px 40px -8px rgba(0,0,0,0.75);
+-moz-box-shadow: -18px 24px 40px -8px rgba(0,0,0,0.75);
 }
