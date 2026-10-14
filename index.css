@@ -28,7 +28,9 @@ li a {
 }
 
 main {
-    padding: 0 200px;
+    padding: 140px 200px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .left {
@@ -77,4 +79,32 @@ main {
     width: 243px;
     height: 243px;
     border-radius: 50%;
+    object-fit: cover;
+    box-shadow: -11px 15px 0px 1px rgba(237,247,250,1);
+    -webkit-box-shadow: -11px 15px 0px 1px rgba(237,247,250,1);
+    -moz-box-shadow: -11px 15px 0px 1px rgba(237,247,250,1);
+}
+
+@media screen and (width: 425px) {
+    main {
+        flex-direction: column-reverse;
+        padding: 24px;
+    }
+
+    .left, .right {
+        width: 100%;
+    }
+
+    .right {
+        display: flex;
+        align-items: center;
+    }
+
+    .left h1 {
+        font-family: Heebo, sans-serif;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 40px;
+        text-align: center;
+    }
 }
