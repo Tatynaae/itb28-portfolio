@@ -30,7 +30,7 @@ li a {
 main {
     display: flex;
     justify-content: space-between;
-    padding: 140px 200px;
+    padding: 24px;
 }
 
 .left {
@@ -83,4 +83,17 @@ main {
     box-shadow: -18px 24px 40px -8px rgba(0,0,0,0.75);
 -webkit-box-shadow: -18px 24px 40px -8px rgba(0,0,0,0.75);
 -moz-box-shadow: -18px 24px 40px -8px rgba(0,0,0,0.75);
+
+}
+
+    @media screen and (width:425p){
+    main{
+        flex-direction: column-reverse;
+        padding: 24px;
+
+
+    }
+    .left,.right{
+        width: 100%;
+    }
 }
