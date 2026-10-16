@@ -29,6 +29,9 @@ li a {
 
 main {
     padding: 0 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .left {
@@ -50,7 +53,7 @@ main {
     width: 497px;
     font-family: Heebo, sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 16px;    
     line-height: 100%;
     letter-spacing: 0px;
     color: #21243D;
@@ -73,8 +76,23 @@ main {
     cursor: pointer;
 }
 
+
+
 .right img {
     width: 243px;
     height: 243px;
     border-radius: 50%;
+    object-fit: cover;
+}
+
+
+.container{
+    width: 100%;
+    max-width: 856px;
+    margin: 0 auto;
+}
+.post_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
