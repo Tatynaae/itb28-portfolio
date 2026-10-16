@@ -4,9 +4,15 @@
     padding: 0;
 }
 
+.container {
+    width: 100%;
+    max-width: 856px;
+    margin: 0 auto;
+}
+
 header {
     width: 100%;
-    padding: 24px 40px;
+    padding: 24px 0;
 }
 
 ul {
@@ -28,7 +34,7 @@ li a {
 }
 
 main {
-    padding: 140px 200px;
+    padding:71px 0 ;   
     display: flex;
     justify-content: space-between;
 }
@@ -49,7 +55,7 @@ main {
 }
 
 .left p {
-    width: 497px;
+    max-width: 497px;
     font-family: Heebo, sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -85,7 +91,7 @@ main {
 -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 
-@media screen and (width: 425) {
+@media screen and (max-width: 425px) {
     main{
         flex-direction: column-reverse;
         padding: 24px;   
@@ -104,4 +110,75 @@ main {
 
     }
 
+}
+
+/* Фоновый цвет для всей секции */
+.recent-posts {
+    background-color: #EDF7FA;
+    padding: 30px 0 60px 0;
+}
+/* Контейнер для выравнивания */
+.recent-posts .conteiner {
+    max-width:856px;/* или ширина твоего макета */
+    margin: 0 auto;
+    padding: 0 20px;
+}
+/* Шапка секции: текст слева, ссылка справа */
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.section-header h2 {
+    font-family:Heebo, sans-serif;
+    font-size: 22px;
+    color:#21243D ;
+    font-weight: 400;
+}
+.section-header .view-all {
+    font-family:Heebo, sans-serif;
+    color: #00A8CC;
+    text-decoration: none;
+    font-size: 16px;
+}
+/* Сетка из двух карточек в ряд */
+.posts-cards {
+    display: flex;
+    gap: 20px;
+}
+/* Стили самой карточки */
+.card {
+    background: #ffffff;
+    border-radius: 4px;
+    padding: 24px;
+    flex: 1;/* Обе карточки будут одинаковой ширины */
+    box-shadow: 0px 4px 10px rgba(187, 225, 250, 0.25);
+}
+
+.card h3 {
+    font-family: 'Heebo', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: #21243D;
+    margin-bottom: 18px;
+}
+
+.card-info {
+    font-family: 'Heebo', sans-serif;
+    font-size: 18px;
+    color: #21243D;
+    margin-bottom: 20px;
+}
+
+.card-info .divider {
+  margin: 0 10px;
+}
+
+.card p {
+  font-family: 'Heebo', sans-serif;
+  font-size: 16px;
+  color: #21243D;
+  line-height: 1.5;
 }
