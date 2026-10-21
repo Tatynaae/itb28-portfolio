@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: Heebo, sans-serif;
 }
 
 header {
@@ -17,7 +18,6 @@ ul {
 }
 
 li a {
-    font-family: Heebo, sans-serif;
     font-weight: 500;
     font-size: 20px;
     line-height: 100%;
@@ -28,7 +28,9 @@ li a {
 }
 
 main {
-    padding: 0 200px;
+    display: flex;
+    justify-content: space-between;
+    padding: 24px;
 }
 
 .left {
@@ -38,7 +40,6 @@ main {
 }
 
 .left h1 {
-    font-family: Heebo, sans-serif;
     font-weight: 700;
     font-size: 44px;
     line-height: 60px;
@@ -48,7 +49,6 @@ main {
 
 .left p {
     width: 497px;
-    font-family: Heebo, sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 100%;
@@ -77,4 +77,42 @@ main {
     width: 243px;
     height: 243px;
     border-radius: 50%;
+    object-fit: cover;
+    box-shadow: -18px 24px 40px -8px rgba(0,0,0,0.75);
+-webkit-box-shadow: -18px 24px 40px -8px rgba(0,0,0,0.75);
+-moz-box-shadow: -18px 24px 40px -8px rgba(0,0,0,0.75);
 }
+.container{
+    width: 100%;
+    max-width: 856px;
+    margin: 0 auto;
+}
+.post__header {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    
+}
+post__header-title{
+line-height: 60px;
+size:24px;
+font-weight:400px;
+
+}
+
+
+
+    @media screen and (width:425p){
+    main{
+        flex-direction: column-reverse;
+        padding: 24px;
+
+
+    }
+    .left,.right{
+        width: 100%;
+    }
+
+  
+}
+
