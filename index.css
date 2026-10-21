@@ -118,7 +118,7 @@ main {
     padding: 30px 0 60px 0;
 }
 /* Контейнер для выравнивания */
-.recent-posts .conteiner {
+.recent-posts .container {
     max-width:856px;/* или ширина твоего макета */
     margin: 0 auto;
     padding: 0 20px;
@@ -182,3 +182,4 @@ main {
   color: #21243D;
   line-height: 1.5;
 }
+
