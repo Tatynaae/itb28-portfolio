@@ -5,8 +5,9 @@
 }
 
 header {
-    width: 100%;
+    max-width: 1200px;
     padding: 24px 40px;
+    margin: 0 auto;
 }
 
 ul {
@@ -35,7 +36,8 @@ main {
 }
 
 .container {
-    margin: auto 200px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .left {
@@ -149,6 +151,68 @@ main {
     letter-spacing: 0px;
     color: #21243D;
     margin-top: 20px;
+}
+
+.works {
+    margin: 15px auto;
+}
+
+.works p {
+    font-family: Heebo, sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 60px;
+    letter-spacing: 0px;
+    color: #21243D;
+}
+
+.works_block {
+    width: 100%;
+    display: flex;
+    gap: 18px;
+    border-bottom: 1px solid #E0E0E0;
+    padding-bottom: 15px;
+    margin-top: 30px;
+}
+
+.works_block_content h3 {
+    font-family: Heebo, sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    color: #21243D;
+}
+
+.year {
+    font-family: Heebo, sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 60px;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    background-color: #142850;
+    padding: 4px 10px;
+    border-radius: 16px;
+    margin-right: 26px;
+}
+
+.work-title {
+    font-family: Heebo, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    color: #8695A4;
+}
+
+.work-text {
+    font-family: Heebo, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px !important;
+    letter-spacing: 0px;
+    color: #21243D;
 }
 
 @media screen and (width: 425px) {
