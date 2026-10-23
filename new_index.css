@@ -241,7 +241,7 @@ header {
     margin: 10px 0 14px;
 }
 
-/* .year {
+.year {
     padding: 1px 12px;
     font-size: 14px;
     font-weight: 700;
@@ -258,7 +258,7 @@ header {
 .work-body p:last-child {
     font-size: 14px;
     line-height: 1.55;
-} */
+}
 
 /* ---------- Footer ---------- */
 footer {
