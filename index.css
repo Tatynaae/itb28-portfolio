@@ -125,6 +125,16 @@ main {
     justify-content: space-between;
     align-items: center;
     margin-top: 22px;
+<<<<<<< HEAD
+}
+
+.resent-posts_item {
+    background-color: #FFFFFF;
+    padding: 24px;
+    width: 50%;
+}
+
+=======
     gap: 20px;
 }
 
@@ -152,6 +162,7 @@ main {
     color: #21243D;
     margin-top: 20px;
 }
+>>>>>>> 1929dab6a7af51c4e7bed63b18179707e726c8a2
 
 .works {
     margin: 15px auto;
